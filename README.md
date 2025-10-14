@@ -1,6 +1,6 @@
 # Tombstoning Tool Calls
 
-A demonstration of "tombstoning" - a technique for compressing verbose AI tool call outputs into concise summaries, reducing token consumption by ~94%.
+A demonstration of "tombstoning" - a technique for compressing verbose AI tool call outputs into concise summaries, reducing token consumption by > 95%.
 
 ## The Concept
 
