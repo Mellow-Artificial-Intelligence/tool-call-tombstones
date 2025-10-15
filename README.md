@@ -6,31 +6,24 @@ A demonstration of "tombstoning" - a technique for compressing verbose AI tool c
 
 When AI models use tools, they often generate lengthy outputs that bloat conversation history. Tombstoning solves this by replacing verbose tool results with compact summaries after their first use.
 
-**The Result**: From 441 tokens down to 26 tokens - a 94% reduction.
+**The Result**: From 679 tokens down to 13 tokens - a 98% reduction.
 
-## Two Approaches
+## The Approach: LLM-Derived Tombstoning
 
-### 1. Naive Tombstoning
-Manually replace long outputs with short, hand-written summaries.
-
-```python
-# Original: 441 tokens of detailed horoscope
-# Tombstoned: "You will have good fortune" (22 tokens)
-```
-
-### 2. LLM-Derived Tombstoning
-Use a lightweight model (like GPT-5-nano) to automatically summarize outputs.
+Use a lightweight model (like GPT-5-nano) to automatically summarize tool outputs into 5 words or less.
 
 ```python
-# Original: 441 tokens
-# LLM Summary: "Virgo: transformative week; trust intuition." (26 tokens)
+# Original: 679 tokens of detailed customer profile
+# Tool Output: Full CRM profile with engagement history, purchase data, support metrics...
+
+# LLM Summary: "VP Eng at premium SaaS." (13 tokens)
 ```
 
 ## When It Matters
 
-- **5 tool calls**: Save ~2,000 tokens per conversation
+- **5 tool calls**: Save ~3,300 tokens per conversation
 - **Long-running agents**: Dramatically reduce context window usage
-- **Storage & caching**: Store 20x more conversation history
+- **Storage & caching**: Store 50x more conversation history
 
 ## The Tradeoff
 
