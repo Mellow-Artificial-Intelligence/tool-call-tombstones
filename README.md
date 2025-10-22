@@ -16,7 +16,7 @@ Use a lightweight model (like GPT-5-nano) to automatically summarize tool output
 # Original: 679 tokens of detailed customer profile
 # Tool Output: Full CRM profile with engagement history, purchase data, support metrics...
 
-# LLM Summary: "VP Eng at premium SaaS." (13 tokens)
+# LLM Summary: "VP Eng at premium SaaS."
 ```
 
 ## When It Matters
