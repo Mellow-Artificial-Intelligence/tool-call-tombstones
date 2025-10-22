@@ -6,7 +6,7 @@ a technique for compressing verbose AI tool call outputs into concise summaries,
 
 When AI models use tools, they often generate lengthy outputs that bloat conversation history. We attempt to solve this by replacing verbose tool results with compact summaries after their first use.
 
-**The Result**: From 679 tokens down to 13 tokens - a 98% reduction.
+**The Result**: From ~600 tokens down to less than 20 tokens.
 
 ## The Approach:
 
