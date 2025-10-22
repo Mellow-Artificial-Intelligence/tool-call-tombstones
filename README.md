@@ -13,7 +13,7 @@ When AI models use tools, they often generate lengthy outputs that bloat convers
 Use a lightweight model (like GPT-5-nano) to automatically summarize tool outputs into 5 words or less.
 
 ```python
-# Original: 679 tokens of detailed customer profile
+# Original: ~600 tokens of detailed customer profile
 # Tool Output: Full CRM profile with engagement history, purchase data, support metrics...
 
 # LLM Summary: "VP Eng at premium SaaS."
