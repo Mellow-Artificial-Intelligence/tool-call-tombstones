@@ -6,17 +6,18 @@ a technique for compressing verbose AI tool call outputs into concise summaries,
 
 When AI models use tools, they often generate lengthy outputs that bloat conversation history. We attempt to solve this by replacing verbose tool results with compact summaries after their first use.
 
-**The Result**: From ~600 tokens down to less than 20 tokens.
+**The Result**: 90%+ of your context window saved
 
 ## The Approach:
 
-Use a lightweight model (like GPT-5-nano) to automatically summarize tool outputs into 5 words or less.
+Use a lightweight model (like GPT-5-nano) to automatically summarize tool outputs
 
 ```python
 # Original: ~600 tokens of detailed customer profile
 # Tool Output: Full CRM profile with engagement history, purchase data, support metrics...
 
-# LLM Summary: "VP Eng at premium SaaS."
+# LLM Summary: [TOOL CALL SUMMARY] CustomerProfileSummary: Provides a comprehensive profile for ...
+
 ```
 
 ## When It Matters
